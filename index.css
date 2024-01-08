@@ -17,7 +17,11 @@ body {
 
 .topnav {
   overflow: hidden;
-  position: absolute;
+  border-radius: 10px;
+}
+
+.body {
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.8);
 }
@@ -54,7 +58,7 @@ ul{
   list-style: none;
 }
 .footer{
-  background-color: #40916C;
+  background-color: #000000;
   padding: 70px 0;
 }
 .footer-col{
@@ -69,16 +73,7 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #F2E9E4;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
+
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
@@ -88,7 +83,7 @@ ul{
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
-  color: #bbbbbb;
+  color: #ffffff;
   display: block;
   transition: all 0.3s ease;
 }
