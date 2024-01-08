@@ -52,18 +52,17 @@ body {
   text-align: left;
   padding: 20px;
 }
-
 .hero {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2; /* Hintergrundfarbe anpassen */
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe anpassen */
+  max-width: 50%;
 }
 
 .hero h2 {
@@ -71,14 +70,40 @@ body {
   color: #333; /* Farbe des Firmennamens anpassen */
 }
 
-.hero .img1 {
-  position:relative ;
-  top: 0;
-  right: 0;
-  height: 40vh;
+.hero p {
+  color: #666; /* Farbe des Textes anpassen */
 }
 
+.hero .img1 {
+  height: 40vh;
+  border-radius: 10px; /* Optional: Runde Ecken für das Bild */
+}
+.über {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2; /* Hintergrundfarbe anpassen */
+}
 
+.über-content {
+  max-width: 50%;
+}
+
+.über h2 {
+  margin: 0;
+  color: #333; /* Farbe des Firmennamens anpassen */
+}
+
+.über p {
+  color: #666; /* Farbe des Textes anpassen */
+}
+
+.über .img1 {
+  height: 40vh;
+  border-radius: 10px; /* Optional: Runde Ecken für das Bild */
+}
 /*ende header nav*/
 
 /*footer*/
