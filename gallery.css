@@ -9,6 +9,9 @@ body {
 .header {
   padding: 20px;
 }
+#logo{
+  margin-left: auto;
+}
 
 .header h1 {
   margin: 0;
@@ -18,8 +21,8 @@ body {
 .topnav {
   overflow: hidden;
   border-radius: 10px;
-  background-color: #f2f2f2; /* Hintergrundfarbe für die Navigationsleiste */
-  padding: 5px; /* Abstand innerhalb der Navigationsleiste */
+  background-color: #f2f2f2; 
+  padding: 5px; 
   display: flex;
   margin-left: 5px;
   align-items: right;
@@ -40,7 +43,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd; /* Hintergrundfarbe bei Hover */
+  background-color: #ddd; 
 }
 
 .body {
@@ -59,51 +62,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f2f2f2; /* Hintergrundfarbe anpassen */
+  background-color: #f2f2f2;
 }
 
-.hero-content {
-  max-width: 50%;
-}
-
-.hero h2 {
-  margin: 0;
-  color: #333; /* Farbe des Firmennamens anpassen */
-}
-
-.hero p {
-  color: #666; /* Farbe des Textes anpassen */
-}
-
-.hero .img1 {
-  height: 40vh;
-  border-radius: 10px; /* Optional: Runde Ecken für das Bild */
-}
-.über {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #f2f2f2; /* Hintergrundfarbe anpassen */
-}
-
-.über-content {
-  max-width: 50%;
-}
-
-.über h2 {
-  margin: 0;
-  color: #333; /* Farbe des Firmennamens anpassen */
-}
-
-.über p {
-  color: #666; /* Farbe des Textes anpassen */
-}
-
-.über .img1 {
-  height: 40vh;
-  border-radius: 10px; /* Optional: Runde Ecken für das Bild */
-}
 /*ende header nav*/
 
 /*footer*/
