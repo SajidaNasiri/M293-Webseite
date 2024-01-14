@@ -107,30 +107,83 @@ body {
 /*ende header nav*/
 /*kontaktformular*/
 
+.kontakt-formular {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
 .kontakt-formular h2 {
-  margin-bottom: 1em;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .kontakt-formular input,
 .kontakt-formular textarea {
-  width: 90%;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .kontakt-formular .submit-btn {
-  padding: 0.5em 2em;
-  background: #333;
-  color: white;
+  width: 100%;
+  padding: 10px;
   border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kontakt-formular .submit-btn:hover {
+  background-color: #555;
 }
 
 .kontakt-formular .danke-nachricht {
-  margin-top: 1em;
-  color: green;
+  color: #28a745;
+  font-size: 16px;
   display: none;
 }
+
+.kontakt-formular .cancel-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #a5a5a5;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Optionaler Abstand zum Senden-Button */
+}
+
+.kontakt-formular .cancel-btn:hover {
+  background-color: #8c8c8c;
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .kontakt-formular {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .kontakt-formular h2 {
+    font-size: 20px;
+  }
+}
+
 
 /*footer*/
 *{

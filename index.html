@@ -39,13 +39,18 @@
     <div class="kontakt-formular">
       <h2>Kontaktieren Sie uns</h2>
       <form id="kontaktFormular">
-          <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-          <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
-          <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" required></textarea>
-          <button type="submit" class="submit-btn">Abschicken</button>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer*" required>
+          <input type="email" id="email" name="email" placeholder="E-Mail*" required>
+          <input type="text" id="interesse" name="interesse" placeholder="Interessiert an">
+          <textarea id="nachricht" name="nachricht" placeholder="Nachricht*" required></textarea>
+          <button type="submit" class="submit-btn">E-Mail senden</button>
+          <button type="button" class="cancel-btn" onclick="resetForm()">Abbrechen</button>
+
           <p id="dankeNachricht" class="danke-nachricht"></p>
       </form> 
     </div>
+    
 
     <!--footer-->
     <footer class="footer">
@@ -83,8 +88,5 @@
       </div>
     </footer>
   </div>
-    
-
-    
 </body>
 </html>

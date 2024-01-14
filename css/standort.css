@@ -67,6 +67,40 @@ body {
 
 /*ende header nav*/
 
+.kontakt-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.kontakt-info {
+  width: 40%;
+}
+
+.kontakt-info h1 {
+  font-size: 3em;
+}
+
+button{
+  padding: 2%;
+  margin-top: 5%;
+  border-radius: 5%;
+  border-style: none;
+  background-color: black;
+  color: white;
+}
+
+.karte {
+  height: 400px; /* Adjust the height as needed */
+}
+
+/* CSS file: standort.css */
+#map {
+  width: 80%;
+  height: auto;
+}
+
 /*footer*/
 *{
   margin:0;
