@@ -105,6 +105,32 @@ body {
   border-radius: 10px; /* Optional: Runde Ecken für das Bild */
 }
 /*ende header nav*/
+/*kontaktformular*/
+
+.kontakt-formular h2 {
+  margin-bottom: 1em;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+  width: 90%;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.kontakt-formular .submit-btn {
+  padding: 0.5em 2em;
+  background: #333;
+  color: white;
+  border: none;
+}
+
+.kontakt-formular .danke-nachricht {
+  margin-top: 1em;
+  color: green;
+  display: none;
+}
 
 /*footer*/
 *{
