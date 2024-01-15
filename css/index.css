@@ -108,12 +108,16 @@ body {
 /*kontaktformular*/
 
 .kontakt-formular {
-  max-width: 600px;
+  max-width: fit-content;
   margin: 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
+  flex-grow: 1;
+  display: flex;
+  align-items: center; /* Zentriert die Elemente vertikal, wenn nötig */
+  justify-content: flex-start; /* Passt die horizontale Ausrichtung an */
 }
 
 .kontakt-formular h2 {
@@ -170,6 +174,8 @@ body {
 .kontakt-formular .cancel-btn:hover {
   background-color: #8c8c8c;
 }
+
+
 
 /* Responsive Design für kleinere Bildschirme */
 @media (max-width: 768px) {
