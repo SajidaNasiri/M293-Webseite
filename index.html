@@ -8,41 +8,54 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-    <h1>Eberle Freuler</h1>
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+          <img src="/img/MicrosoftTeams-image (3).png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+          <li><a href="gallery.html">Projekte</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="überuns.html">Über Uns</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+  </nav>
+  <div class="hero-section">
+      <video autoplay muted loop id="hero-video">
+          <source src="img/pexels_videos_2325093 (1080p).mp4" type="video/mp4">
+          Dein Browser unterstützt kein Video.
+      </video>
+      <div class="content">
+        <h1><span class="bold">Architektur,</span><br><span class="thin">die inspiriert</span></h1>
+          <button> <a href="kontakt.html">Kontaktiere Uns</a></button>
+      </div>
   </div>
-  <div class="body">
-    <div class="topnav"> 
-      <img src="img/MicrosoftTeams-image (3).png" alt="logo">
-      <a class="active home" href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="projekte.html">Projekte</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="überuns.html">Über uns</a>
-    </div>
-    <!--ende nav-->
-    <div class="hero">
-      <div class="hero-content">
-        <h2>Erble Freuler</h2>
-        <img src="img/home.jpg" alt="home" class="img1">
+
+  <div class="content-container">
+    <div class="about-section">
+      <div class="title-area">
+          <h4 class="sub-title">Über Uns</h4>
+          <h1 class="title">Eberle Freuler Architekten</h1>
       </div>
-      <div class="über">
-        <img src="img/home.jpg" alt="home" class="img1">
-        <img src="img/about.jpg" alt="" class="img1">
-        <div class="über-content">
-          <h2>Erble Freuler</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque dolore, vero, omnis doloribus fugiat nemo repudiandae eius animi veniam quo distinctio velit facilis vitae excepturi iure ipsa ipsum laboriosam.</p>
+      <div class="text-area">
+          <p>Bei Eberle Freuler verbinden wir Ästhetik mit Funktionalität, um innovative und nachhaltige architektonische Lösungen zu schaffen. Seit unserer Gründung im Jahr 1995 haben wir uns dem Entwurf von Räumen verschrieben, die das Leben der Menschen bereichern und die Umwelt respektieren. Unser dynamisches Team aus erfahrenen Architekten und Designern arbeitet eng mit jedem Kunden zusammen, um maßgeschneiderte Konzepte zu entwickeln, die sowohl visionär als auch realisierbar sind. Unser Portfolio umfasst eine Vielzahl von Projekten, von modernen Wohnkomplexen bis hin zu gewerblichen und öffentlichen Bauten, wobei jeder Entwurf die Einzigartigkeit unserer Kunden widerspiegelt.</p>
+      </div>
+  </div>
+</div>
+      
+      <div class="projects-section section">
+        <h2>Unsere Projekte</h2>
+        <div class="projects-row">
+            <img src="img/8.jpg" alt="Bild 8" class="project-image">
+            <img src="img/9.jpg" alt="Bild 9" class="project-image">
+            <img src="img/10.jpg" alt="Bild 10" class="project-image">
+            <img src="img/11.jpg" alt="Bild 11" class="project-image">
+            <img src="img/12.jpg" alt="Bild 12" class="project-image">
         </div>
-      </div>
+        <button> <a href="projekte.html">Projekte ansehen</a></button>
     </div>
-    
-
-
-
     <div class="kontakt-formular">
-      <div class="form-container">
-        <h2>Kontaktieren Sie uns</h2>
-        <form id="kontaktFormular">
+      <h2>Kontaktieren Sie uns</h2>
+      <form id="kontaktFormular">
           <input type="text" id="name" name="name" placeholder="Name" required>
           <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer*" required>
           <input type="email" id="email" name="email" placeholder="E-Mail*" required>
@@ -50,14 +63,12 @@
           <textarea id="nachricht" name="nachricht" placeholder="Nachricht*" required></textarea>
           <button type="submit" class="submit-btn">E-Mail senden</button>
           <button type="button" class="cancel-btn" onclick="resetForm()">Abbrechen</button>
+
           <p id="dankeNachricht" class="danke-nachricht"></p>
-        </form>
-      </div>
-      <img id="image" src="img/überuns9.jpg" alt="" style="height:600px;">
+      </form> 
     </div>
     </div>
 
-    
     <footer class="footer">
       <div class="container">
       <div class="row">
@@ -69,7 +80,8 @@
           <ul>
             <li><a href="überuns.html">Über uns</a></li>
             <li><a href="projekte.html">Projekte</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="blog.html">Blog</a></li>
          </ul>
         </div>
         <div class="footer-col">

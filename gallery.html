@@ -5,21 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eberle Freuler Gallery</title>
   <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="pagination.js">
   
-  <script src="script.js"></script>
-  <script src="pagination.js"></script>
+  <script src="js/skript.js"></script>
 </head>
 <body>
-  <div class="header">
-    <h1>Eberle Freuler</h1>
-  </div>
   <div class="body">
     <div class="topnav"> 
       <img src="img/MicrosoftTeams-image (3).png" alt="logo" id="logo">
       <a class="active home" href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="projekte.html">Projekte</a>
+      <a href="gallery.html">Projekte</a>
       <a href="contact.html">Kontakt</a>
       <a href="überuns.html">Über uns</a>
     </div>
@@ -290,51 +284,48 @@
                 <img src="img/55.jpg" alt="Bild 54">
                 <p class="bildinfo">Information über Bild 55. Wettbewerb ISR, Buchs SG</p>
             </div>
-
+            <button id="scrollToTopBtn" onclick="scrollToTop()">
+                <img src="img/pfeil.png" alt="Scroll to Top">
+            </button>
+              
+              
         </section>
-
-        <div class="pagination">
-          <button onclick="previousPage()">Zurück</button>
-          <span id="page-counter">Seite 1</span>
-          <button onclick="nextPage()">Weiter</button>
-      </div>
-
     </main>
 
     <footer class="footer">
-      <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <img src="img/MicrosoftTeams-image (4).png" alt="">
-        </div>
-        <div class="footer-col">
-          <h4>EBERLE FREULER</h4>
-          <ul>
-            <li><a href="überuns.html">Über uns</a></li>
-            <li><a href="projekte.html">Projekte</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-         </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Kontakt</h4>
-          <ul>
-            <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="standort.html">Standort</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <img src="img/MicrosoftTeams-image (4).png" alt="">
+            </div>
+            <div class="footer-col">
+              <h4>EBERLE FREULER</h4>
+              <ul>
+                <li><a href="überuns.html">Über uns</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+             </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Kontakt</h4>
+              <ul>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="standort.html">Standort</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      </div>
-    </footer>
+          </div>
+        </footer>
   </div>
 
 </body>

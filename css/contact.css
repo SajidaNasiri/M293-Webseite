@@ -1,68 +1,77 @@
-/*anfang header nav*/
-
-body {
+body, html {
+  height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: #ffffff;
-}
-.header {
-  padding: 20px;
-}
-#logo{
-  margin-left: auto;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(15, 15, 15);
 }
 
-.header h1 {
+* {
   margin: 0;
-  color: rgb(153, 142, 142);
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.topnav {
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #f2f2f2; 
-  padding: 5px; 
-  display: flex;
-  margin-left: 5px;
-  align-items: right;
-  justify-content: flex-end;
+h1 {
+  font-size: 2em;
 }
 
-.topnav img {
-  height: 40px;
+h2 {
+  font-size: 60px;
 }
 
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 16px 16px;
+h4 {
+  font-size: 20px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+a {
   text-decoration: none;
-  font-size: 17px;
+  color: inherit;
 }
 
-.topnav a:hover {
-  background-color: #ddd; 
-}
-
-.body {
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.8);
-}
-
-.content {
-  text-align: left;
-  padding: 20px;
-}
-.hero {
-  position: relative;
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #f2f2f2;
+  align-items: center;
+  padding: 10px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: larger;
+}
+
+.navbar.scrolled {
+  background-color: rgb(248, 248, 248); 
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}  
+
+.nav-links a:hover {
+  border-bottom: 2px solid rgb(15, 15, 15);
+  margin-bottom: -2px;
 }
 
 /*ende header nav*/
@@ -79,6 +88,7 @@ body {
   display: flex;
   align-items: center; /* Zentriert die Elemente vertikal, wenn nötig */
   justify-content: flex-start; /* Passt die horizontale Ausrichtung an */
+  margin-top: 5%;
 }
 
 .kontakt-formular h2 {

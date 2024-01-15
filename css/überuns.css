@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
+  margin-top: 2%;
 }
 
 .header {
@@ -16,8 +17,47 @@ body {
 section {
   padding: 20px;
 }
-h1{
-  text-align: center;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: larger;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}  
+
+.nav-links a:hover {
+  border-bottom: 2px solid rgb(15, 15, 15);
+  margin-bottom: -2px;
+}
+
+.navbar.scrolled {
+  background-color: rgb(248, 248, 248); 
 }
 
 #team {
